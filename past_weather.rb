@@ -18,13 +18,26 @@ URL_LIST =
     'http://weather.goo.ne.jp/appearance_ratio/p0020/12.html'
   ]
 
-def get_weather_data url
+def get_document url
   charset = nil
   html = open(url) do |f|
     charset = f.charset
     f.read
   end
-  doc = Nokogiri::HTML.parse(html, nil, charset)
+  Nokogiri::HTML.parse(html, nil, charset)
+end
+
+def get_url_list original_url
+  list = []
+  12.times do |i|
+    month = sprintf("%02d",i+1)
+    list << (original_url + "#{month}.html")
+  end
+  list
+end
+
+def get_weather_data url
+  get_document url
   
   info_data = {}
   info = { weather: nil, high: nil, low: nil, average: nil }
