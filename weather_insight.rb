@@ -1,3 +1,9 @@
+# ---
+# Copyright 2015 by kozakana.
+# All rights reserved.
+# See LICENSE.txt for permissions.
+# ---
+
 require 'nokogiri'
 require 'open-uri'
 require './url_list'
@@ -81,7 +87,6 @@ class WeatherInsight
     end
     
     info_data[prev_date] = info
-    
     info_data
   end
 end
