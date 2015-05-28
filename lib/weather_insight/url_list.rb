@@ -1,7 +1,7 @@
 module UrlList
   STANDARD_URL = 'http://weather.goo.ne.jp/appearance_ratio/'
 
-  def month_url spot, month
+  def self.month_url spot, month
     if 1<=month && month<=12
       month = sprintf("%02d",month)
       "#{STANDARD_URL}#{spot_url(spot)}#{month}.html"
@@ -9,8 +9,10 @@ module UrlList
       raise ArgumentError, "invalid argument"
     end
   end
-  
-  def spot_url spot
+
+  private
+
+  def self.spot_url spot
     case spot
     when :dohoku
       'p0001/'

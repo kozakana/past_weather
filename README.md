@@ -1,30 +1,31 @@
-weather_insight
-====
+# WeatherInsight
 
-## Overview
+TODO: Write a gem description
 
-WeatherInsight acquire average data of past weather.
+## Installation
 
-## Description
+Add this line to your application's Gemfile:
 
-in preparation
+```ruby
+gem 'weather_insight'
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install weather_insight
 
 ## Usage
 
-in preparation
+TODO: Write usage instructions here
 
-## Install
+## Contributing
 
-in preparation
-
-## Contribution
-
-in preparation
-
-## Licence
-
-This software is released under the MIT License, see LICENSE.txt.
-
-## Author
-
-[kozakana](https://github.com/kozakana)
+1. Fork it ( https://github.com/[my-github-username]/weather_insight/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
