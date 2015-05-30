@@ -2,6 +2,11 @@
 
 WeatherInsight acquire average data of past weather.
 
+## Notice
+
+WeatherInsight is used Web scraping. Therefore be careful about excessive access to a Web server.
+You can adjust time interval which requests to web server.
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +27,11 @@ Or install it yourself as:
 
 ```ruby
 require 'weather_insight'
-year_data = WeatherInsight.year_data :aichi
+year_data = WeatherInsight.year_data :aichi, interval: 500
+
+# How to get 5/28 data.
+year_data[5][28]
+```
 
 ### Parameters
 
@@ -78,10 +87,6 @@ year_data = WeatherInsight.year_data :aichi
 沖縄       :okinawa
 宮古・石垣 :miyako_ishigaki
 南大東島   :minamidaitojima
-
-# How to get 5/28 data.
-year_data[5][28]
-```
 
 ## Contributing
 
