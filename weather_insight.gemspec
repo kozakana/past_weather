@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = WeatherInsight::VERSION
   spec.authors       = ["kozakana"]
   spec.email         = ["goki727@gmail.com"]
-  spec.summary       = %q{WeatherInsight acquire average data of past weather.}
-  spec.description   = %q{WeatherInsight acquire average data of past weather.}
+  spec.summary       = %q{WeatherInsight acquire average data of past weather from goo.}
+  spec.description   = %q{WeatherInsight acquire average data of past weather from goo.}
   spec.homepage      = "https://github.com/kozakana"
   spec.license       = "MIT"
 

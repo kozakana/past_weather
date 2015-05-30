@@ -17,7 +17,7 @@ module WeatherInsight
       get_data url
     end
 
-    def year_data spot, interval: 300
+    def year_data spot, interval: 0.3
       year_data = {}
 
       1.upto(12) do |month|

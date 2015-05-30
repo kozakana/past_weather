@@ -1,6 +1,6 @@
 # WeatherInsight
 
-WeatherInsight acquire average data of past weather.
+WeatherInsight acquire average data of past weather from goo.
 
 ## Notice
 
@@ -27,10 +27,10 @@ Or install it yourself as:
 
 ```ruby
 require 'weather_insight'
-year_data = WeatherInsight.year_data :aichi, interval: 500
 
-# How to get 5/28 data.
-year_data[5][28]
+# How to get 7/28 data.
+month_data = WeatherInsight.month_data :aichi, 7
+month_data[28]
 ```
 
 ### Parameters
