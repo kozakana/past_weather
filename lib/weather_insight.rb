@@ -17,14 +17,13 @@ module WeatherInsight
       get_data url
     end
 
-    def year_data spot, interval: 0.3
+    def year_data spot
       year_data = {}
 
       1.upto(12) do |month|
         url = UrlList.month_url spot, month
         month_data = get_data url
         year_data[month] = month_data
-        sleep(interval)
       end
 
       year_data     # year_data[:month][:day]

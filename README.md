@@ -1,11 +1,12 @@
 # WeatherInsight
 
 WeatherInsight acquire average data of past weather from goo.
+Only Japan data.
 
 ## Notice
 
 WeatherInsight is used Web scraping. Therefore be careful about excessive access to a Web server.
-You can adjust time interval which requests to web server.
+Please use weather data which is written by your program in a file.
 
 ## Installation
 
