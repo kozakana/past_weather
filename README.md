@@ -36,6 +36,7 @@ month_data[28]
 
 ### Parameters
 
+<pre>
 道北       :dohoku
 道央       :doou
 道東       :dotou
@@ -88,6 +89,7 @@ month_data[28]
 沖縄       :okinawa
 宮古・石垣 :miyako_ishigaki
 南大東島   :minamidaitojima
+</pre>
 
 ## Contributing
 
