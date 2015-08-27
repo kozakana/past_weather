@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["goki727@gmail.com"]
   spec.summary       = %q{WeatherInsight acquire average data of past weather from goo.}
   spec.description   = %q{WeatherInsight acquire average data of past weather from goo.}
-  spec.homepage      = "https://github.com/kozakana"
+  spec.homepage      = "https://github.com/kozakana/weather_insight"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
